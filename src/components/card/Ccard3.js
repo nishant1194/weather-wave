@@ -73,7 +73,7 @@ function Ccard3() {
     if (lat && long) {
       fectdata();
     }
-  }, [lat, long]);
+  }, []);
   const timeConvert = (sunriseTimestamp, sunsetTimestamp) => {
     sunriseTimestamp *= 1000;
     sunsetTimestamp *= 1000;
