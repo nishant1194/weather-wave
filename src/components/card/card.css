@@ -1,0 +1,45 @@
+.card1{
+    margin: 25px;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    background-color: rgb(30,30,32);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    justify-content: space-around;
+}
+.temp{
+    display: flex;
+    background-color: rgb(30,30,32);
+    font-size: 45px;
+justify-content: space-between;
+align-items: center;
+
+}
+.now{
+    font-size: larger;
+    background-color: rgb(30,30,32);
+
+
+}
+
+.line{
+    height: 1px;
+    background-color: rgb(218, 225, 232);
+    border-radius: 10px;
+  
+}
+.day{
+   font-size: small;
+}
+.date{
+    font-size: small;
+}
+.location{
+    font-size: small;
+
+}
+
+

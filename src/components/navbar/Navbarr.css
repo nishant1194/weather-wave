@@ -1,0 +1,62 @@
+.navvv{
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    justify-content: space-between;
+    /* background-color: aliceblue; */
+    border-radius: 20px;
+    align-items: center;
+    margin: 20px 20px -10px 20px ;
+}
+.wheatherWave{
+    display: flex;
+    align-items: center;
+}
+
+.searchBar{
+    display: flex;
+    align-items: center;
+
+   
+}
+.weatherWaveText{
+    font-size: x-large;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.searchText{
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px ;
+    background-color: rgb(30,30,32);
+    width: 400px;
+
+}
+
+.submitt{
+    border-radius: 50%;
+    height: 100%;
+    background-color: rgb(30,30,32);
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.aboutMe{
+    background-color: rgb(156, 123, 255);
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
+    font-size: large;
+}
+.weatherWaveIcon{
+    height: 70px; 
+    width: 70px;
+}
+@media screen and (max-width:750px) {
+   .searchText{
+    width: 100px;
+   }
+  .navvv{
+    flex-direction: column;
+  }
+    
+  }

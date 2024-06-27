@@ -1,0 +1,29 @@
+
+.dayforcast{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.forcastDays{
+    margin: 25px;
+    width: 300px;
+    padding: 30px;
+    background-color: rgb(30,30,32);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+   
+}
+.ulls{
+    list-style: none;
+    background-color: rgb(30,30,32);
+    margin: 0;
+
+
+}
+.hello{
+    font-size: larger;
+}
