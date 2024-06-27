@@ -47,8 +47,8 @@ function Ccard3() {
       });
   };
 
-  const fectdata = () => {
-    axios
+  const fectdata = async() => {
+    await axios
       .get(
         `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${long}&appid=e3da96cd3132153fc9bf6c6af1f92ce8`
       )
