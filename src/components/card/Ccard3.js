@@ -15,11 +15,9 @@ function Ccard3() {
   const [lat, setLat] = useState();
   const [long, setLong] = useState();
 
-  const [no2, setNo2] = useState();
-  const [o3, setO3] = useState();
-  const [so2, setSo2] = useState();
-  const [pm25, setPm25] = useState();
-  const [aqi, setaqi] = useState();
+  const [deg, setdeg] = useState();
+  const [speed, setspeed] = useState();
+
 
   const [humidity, setHumidity] = useState();
   const [pressure, setPressure] = useState();
@@ -41,39 +39,20 @@ function Ccard3() {
         timeConvert(res.data.sys.sunrise, res.data.sys.sunset);
         setLat(res.data.coord.lat);
         setLong(res.data.coord.lon);
+        setdeg(res.data.wind.deg)
+        setspeed(res.data.wind.speed)
       })
       .catch((error) => {
         console.log(error);
       });
   };
 
-  const fectdata = async() => {
-    await axios
-      .get(
-        `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${long}&appid=e3da96cd3132153fc9bf6c6af1f92ce8`
-      )
-      .then((res) => {
-        console.log(res.data);
-        setNo2(res.data.list[0].components.no2);
-        setPm25(res.data.list[0].components.pm2_5);
-        setSo2(res.data.list[0].components.so2);
-        setO3(res.data.list[0].components.o3);
-        setaqi(res.data.list[0].main.aqi)
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+
 
   useEffect(() => {
     fetchCondition();
   }, [cityName]);
 
-  useEffect(() => {
-    if (lat && long) {
-      fectdata(lat,long);
-    }
-  }, [lat, long]);
   const timeConvert = (sunriseTimestamp, sunsetTimestamp) => {
     sunriseTimestamp *= 1000;
     sunsetTimestamp *= 1000;
@@ -97,28 +76,21 @@ function Ccard3() {
         <div className="highlight">Today's Highlight</div>
         <div className="boxes2">
           <div className="box1">
-            <div className="textt"> Air Quality Index -- {aqi}</div>
+            <div className="textt"> Wind</div>
             <div className="aixBox">
               <div className="airComponents ">
                 <img className="text image" src={aqiIcon}/>
               </div>
 
               <div className="airComponents">
-                <div className="text">PM2.5</div>
-                <h3>{pm25}</h3>
+                <div className="text">degree</div>
+                <h3>{deg}</h3>
               </div>
               <div className="airComponents">
-                <div className="text">SO2</div>
-                <h3>{so2}</h3>
+                <div className="text">Speed</div>
+                <h3>{speed}</h3>
               </div>
-              <div className="airComponents atlo">
-                <div className="text ">NO2</div>
-                <h3>{no2}</h3>
-              </div>
-              <div className="airComponents atlo">
-                <div className="text">O3</div>
-                <h3>{o3}</h3>
-              </div>
+             
             </div>
           </div>
           <div className="box1">
@@ -134,6 +106,7 @@ function Ccard3() {
               </div>
             </div>
           </div>
+          
         </div>
         <div className="box11">
           <div className="aixBoxx">
