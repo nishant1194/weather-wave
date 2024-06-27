@@ -71,9 +71,9 @@ function Ccard3() {
 
   useEffect(() => {
     if (lat && long) {
-      fectdata();
+      fectdata(lat,long);
     }
-  }, []);
+  }, [lat, long]);
   const timeConvert = (sunriseTimestamp, sunsetTimestamp) => {
     sunriseTimestamp *= 1000;
     sunsetTimestamp *= 1000;
