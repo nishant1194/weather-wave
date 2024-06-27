@@ -41,11 +41,12 @@ return redableDate;
     <div>
       <div className="forcastDays">
         <ul className='ulls'>
-        <li className="day2 dayforcast grey"> <div className="ttempp"><img src="" alt="" className="img" /><span className='hello'>{Math.round(array[0]?.main.temp)} &#8451;</span></div> <div className="datee text">{timeConvert(array[0]?.dt)}</div><div className="daye text">img</div> </li>
-        <li className="day2 dayforcast grey"> <div className="ttempp"><img src="" alt="" className="img" /><span className='hello'>{Math.round(array[8]?.main.temp)} &#8451;</span></div> <div className="datee text">{timeConvert(array[8]?.dt)}</div><div className="daye text">img</div> </li>
-        <li className="day2 dayforcast grey"> <div className="ttempp"><img src="" alt="" className="img" /><span className='hello'>{Math.round(array[17]?.main.temp)} &#8451;</span></div> <div className="datee text">{timeConvert(array[15]?.dt)}</div><div className="daye text">img</div> </li>
-        <li className="day2 dayforcast grey"> <div className="ttempp"><img src="" alt="" className="img" /><span className='hello'>{Math.round(array[26]?.main.temp)} &#8451;</span></div> <div className="datee text">{timeConvert(array[23]?.dt)}</div><div className="daye text">img</div> </li>
-        <li className="day2 dayforcast grey"> <div className="ttempp"><img src="" alt="" className="img" /><span className='hello'>{Math.round(array[39]?.main.temp)} &#8451;</span></div> <div className="datee text">{timeConvert(array[31]?.dt)}</div><div className="daye text">img</div> </li>
+          <li className="card2hl  grey">5 days forcast</li>
+        <li className="day2 dayforcast grey"> <img src={`http://openweathermap.org/img/wn/${array[0]?.weather[0].icon}@2x.png`} alt="" className="img grey" /><span className='hello grey' style={{backgroundColor:"rgb(30,30,32)"}}>{Math.round(array[0]?.main.temp)} &#8451;</span> <div className="datee text grey">{timeConvert(array[0]?.dt)}</div> </li>
+        <li className="day2 dayforcast grey"> <img src={`http://openweathermap.org/img/wn/${array[8]?.weather[0].icon}@2x.png`} alt="" className="img" /><span className='hello' style={{backgroundColor:"rgb(30,30,32)"}}>{Math.round(array[8]?.main.temp)} &#8451;</span> <div className="datee text">{timeConvert(array[8]?.dt)}</div>  </li>
+        <li className="day2 dayforcast grey"> <img src={`http://openweathermap.org/img/wn/${array[17]?.weather[0].icon}@2x.png`} alt="" className="img" /><span className='hello' style={{backgroundColor:"rgb(30,30,32)"}}>{Math.round(array[17]?.main.temp)} &#8451;</span> <div className="datee text">{timeConvert(array[15]?.dt)}</div>  </li>
+        <li className="day2 dayforcast grey"> <img src={`http://openweathermap.org/img/wn/${array[26]?.weather[0].icon}@2x.png`} alt="" className="img" /><span className='hello' style={{backgroundColor:"rgb(30,30,32)"}}>{Math.round(array[26]?.main.temp)} &#8451;</span> <div className="datee text">{timeConvert(array[23]?.dt)}</div>  </li>
+        <li className="day2 dayforcast grey"> <img src={`http://openweathermap.org/img/wn/${array[36]?.weather[0].icon}@2x.png`} alt="" className="img" /><span className="hello grey" style={{backgroundColor:"rgb(30,30,32)"}}>{Math.round(array[39]?.main.temp)} &#8451;</span> <div className="datee text">{timeConvert(array[31]?.dt)}</div> </li>
         </ul>
       </div>
     </div>
