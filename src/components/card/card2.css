@@ -17,6 +17,10 @@
     border-radius: 25px;
    
 }
+.text{
+   background-color: rgb(30,30,32);
+
+}
 .ulls{
     list-style: none;
     background-color: rgb(30,30,32);
