@@ -1,6 +1,6 @@
 
 .dayforcast{
-    margin: 10px;
+    margin: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,17 +9,13 @@
 .forcastDays{
     margin: 25px;
     width: 300px;
-    padding: 30px;
+    padding:  20px 30px 15px 30px;
     background-color: rgb(30,30,32);
     color: aliceblue;
     display: flex;
     flex-direction: column;
     border-radius: 25px;
    
-}
-.text{
-   background-color: rgb(30,30,32);
-
 }
 .ulls{
     list-style: none;
@@ -30,4 +26,19 @@
 }
 .hello{
     font-size: larger;
+    margin-left: 10px;
+}
+.card2hl{
+    margin:0px 0px 20px 10px ;
+}
+
+.img{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(30,30,32);
+
+}
+.text{
+    background-color: rgb(30,30,32);
+
 }
