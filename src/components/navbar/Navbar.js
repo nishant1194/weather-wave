@@ -39,7 +39,7 @@ function Navbar() {
                 onClick={() => dispatch(updateString(city))}
 >Submit</button>
     </form>
-      <div className="aboutMe"> About Me</div>
+     <a href="https://portfolio-sigma-one-53.vercel.app/"> <div className="aboutMe"> About Me</div></a>
     </div>
   )
 
